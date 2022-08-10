@@ -1,3 +1,29 @@
+body {
+    background-color: #1B244A;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+
+    padding-bottom: 64px;
+}
+
+.welcome-message{
+    font-size: 32px;
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 16px;
+}
+
 img {
     width: 300px;
     height: 300px;
@@ -5,4 +31,31 @@ img {
 
 button {
     background: none;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    font-size: 24px;
+}
+
+
+.player-score, .computer-score {
+    display: flex;
+    gap: 8px;
+    margin: 24px;
+}
+
+.restart {
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+#winner {
+    font-size: 32px;
+    font-weight: bold;
 }

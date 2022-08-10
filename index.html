@@ -6,14 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <div class="Title">Welcome to Rock Paper Scissors!</div>
+    
+    <div class="header">
+        <div class="title">Welcome to Rock Paper Scissors!</div>
+    </div>
+    
     <div class="welcome-message">Please make a selection!</div>
     <div class="img-container">
-        <button><img src='rock.png'></button>
-        <button><img src='paper.png'></button>
-        <button><img src='scissors.png'></button>
+        <button onclick="player('rock')"><img src='pics/rock.png'></button>
+        <button onclick="player('paper')"><img src='pics/paper.png'></button>
+        <button onclick="player('scissors')"><img src='pics/scissors.png'></button>
     </div>
+    <div class="scores">
+        <div class="player-score">
+            <div class="score-text">Player Score:</div>
+            <div class="score" id="player-score-val">0</div>
+        </div>
+        <div class="computer-score">
+            <div class="score-text">Computer Score: </div>
+            <div class="score" id="computer-score-val">0</div>
+        </div>
+    </div>
+
+    <div id="winner"></div>
+
+    <button class="restart" onclick="resetScore()">Restart</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
